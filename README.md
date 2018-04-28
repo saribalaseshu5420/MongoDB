@@ -34,3 +34,22 @@ This is called priopity
 Use {w :"majority",wtimeout:100} use for give the majority of the documents you want to insert and give the time out for this operation
 if the time exceeds the specified time then the transaction will roll back automatically (Transaction management)
 
+###triggers:
+
+
+
+###Functions:
+stored in db.system.js
+1) For loading functions db.loadServerScripts();
+2) For running functions function Name(fn,ln)
+
+######Syntax 
+db.system.js.save(
+{
+  "_id": "fName",
+  value: function(fn,ln){
+    return fn +" "+ln;
+  }
+})
+
+ 
